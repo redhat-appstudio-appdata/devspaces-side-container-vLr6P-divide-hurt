@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devspaces-side-container
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devspaces-side-container
+    app.kubernetes.io/part-of: devspaces-side-container
+  name: devspaces-side-container
+spec:
+  ports:
+  - name: http-8081
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  - name: "8080"
+    port: 8080
+    targetPort: 8080
+  selector:
+    app: java-springboot-app
+    app.kubernetes.io/instance: devspaces-side-container
+status:
+  loadBalancer: {}
