@@ -15,9 +15,6 @@ spec:
     port: 8081
     protocol: TCP
     targetPort: 8081
-  - name: "8080"
-    port: 8080
-    targetPort: 8080
   selector:
     app: java-springboot-app
     app.kubernetes.io/instance: devspaces-side-container
