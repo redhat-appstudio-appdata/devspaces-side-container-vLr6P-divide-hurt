@@ -11,7 +11,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhn-support-agiertli-tenant/devspaces-side-container/devspaces-side-container@sha256:e84bd4addfe94eb45e7c26688f527fd19d3c560ddcd6bf70ec3ac409aa955cf4
+      - image: quay.io/redhat-user-workloads/rhn-support-agiertli-tenant/devspaces-side-container/devspaces-side-container@sha256:52bcf704ab204a3fb3f132afd19e2bf4c370584277496c7e16ee6357e1a4f81f
         name: my-java-springboot
         resources: {}
 status: {}
