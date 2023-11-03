@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devspaces-side-container
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devspaces-side-container
+    app.kubernetes.io/part-of: devspaces-side-container
+  name: devspaces-side-container07dr
+spec:
+  path: /
+  port:
+    targetPort: 8080
+  to:
+    kind: Service
+    name: devspaces-side-container
+    weight: null
+status: {}

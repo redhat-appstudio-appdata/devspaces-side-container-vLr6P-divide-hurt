@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devspaces-side-container
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-agiertli-tenant/devspaces-side-container/devspaces-side-container@sha256:e84bd4addfe94eb45e7c26688f527fd19d3c560ddcd6bf70ec3ac409aa955cf4
+        name: my-java-springboot
+        resources: {}
+status: {}
