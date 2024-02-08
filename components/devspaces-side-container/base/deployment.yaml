@@ -28,7 +28,7 @@ spec:
       - env:
         - name: SPRING_PROFILES_ACTIVE
           value: h2
-        image: quay.io/redhat-user-workloads/rhn-support-agiertli-tenant/devspaces-side-container/devspaces-side-container@sha256:8edb6be3f60e695f01410d8cdc197fe871137bb924ef0f80263e01f2adbe6c41
+        image: quay.io/redhat-user-workloads/rhn-support-agiertli-tenant/devspaces-side-container/devspaces-side-container@sha256:e6389e9d0a4b09510ccc4b408b1683a38448151ef3c37e2ddcb324131d0c02f3
         name: my-java-springboot
         ports:
         - containerPort: 8081
